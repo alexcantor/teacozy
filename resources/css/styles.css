@@ -41,7 +41,7 @@ a {
   display: flex;
 }
 
-/*Header*/
+/*Header Styles*/
 header {
   display: flex;
   position: fixed;
@@ -70,7 +70,7 @@ header nav {
   padding-right: 10px;
 }
 
-/*Main Section*/
+/*Main Section styles*/
 section.main {
   margin: 0 auto;
   position: relative;
@@ -87,7 +87,7 @@ main {
   align-items: center;
 }
 
-/*Featured Tea Section*/
+/*Featured Tea Styles*/
 section.featured-tea {
   flex-direction: column;
   position: relative;
@@ -141,4 +141,48 @@ section.featured-tea {
 
 .bedford {
   padding-left: 25px;
+}
+
+/*Location Styles*/
+section.locations {
+  height: 500px;
+  width: 1200px;
+  background-image: url(../pics/img-locations-background.jpg);
+  background-size: cover;
+  position: relative;
+  top: 220px;
+  margin: 0 auto;
+  font-family: helvetica;
+  font-weight: bold;
+  color: seashell;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.location-boxes {
+  width: 980px;
+  height: 260px;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.location-box {
+  height: 260px;
+  width: 300px;
+  background-color: black;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loc-box-line {
+  padding: 10px;
+}
+
+.loc-box-header {
+  font-weight: normal;
+}
+.location-header {
+  position: absolute;
+  top: 45px;
 }
