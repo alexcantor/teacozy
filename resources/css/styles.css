@@ -173,6 +173,7 @@ section.locations {
   background-color: black;
   flex-direction: column;
   align-items: center;
+  opacity: 1;
 }
 
 .loc-box-line {
@@ -185,4 +186,15 @@ section.locations {
 .location-header {
   position: absolute;
   top: 45px;
+}
+
+/*Contact Styles*/
+section.contact {
+  height: 200px;
+  position: relative;
+  top: 220px;
+  width: 100%;
+  font-family: helvetica;
+  color: seashell;
+  text-align: center;
 }
