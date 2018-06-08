@@ -71,15 +71,10 @@ header nav {
 }
 
 /*Main Section styles*/
-section.main {
+main {
   margin: 0 auto;
   position: relative;
   top: 70px;
-  height: 700px;
-  width: 1200px;
-}
-
-main {
   background-image: url(../pics/img-mission-background.jpg);
   width: 1200px;
   height: 700px;
@@ -99,14 +94,34 @@ section.featured-tea {
   font-weight: bold;
   color: seashell;
 }
+.pictures {
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
+.img img {
+  width: 300px;
+  height: 200px;
+}
+
+.img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: 250px;
+  margin: 0 12.5px;
+}
+
+.img-title {
+  position: relative;
+  top: -15px;
+}
+
+/*Not needed with the flex-wrap approach
 .tea.section-header {
   width: 1000px;
   margin-bottom: 15px;
-}
-
-.img-content {
-  display: flex;
 }
 
 .top-row {
@@ -118,30 +133,13 @@ section.featured-tea {
   justify-content: center;
 }
 
-.img img {
-  width: 300px;
-  height: 200px;
-
-}
-.img {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 300px;
-  height: 250px;
-}
-.img-title {
-  position: relative;
-  top: -15px;
-}
-
 .myrtle {
   padding-right: 25px;
 }
 
 .bedford {
   padding-left: 25px;
-}
+}*/
 
 /*Location Styles*/
 section.locations {
@@ -175,9 +173,6 @@ section.locations {
   opacity: 1;
 }
 
-.loc-box-header {
-  font-weight: bolder;
-}
 .location-header {
   position: absolute;
   top: 49px;
@@ -202,13 +197,13 @@ section.contact {
 
 /*Footer Styles*/
 section.footer {
-  background-color: black;
   position: relative;
   top: 220px;
+  background-color: black;
   height: 100px;
   align-items: center;
 }
 
 .footer h5 {
-  padding-left: 20px;
+  padding-left: 20px; /*could use margin-left: 20px; as well*/
 }
